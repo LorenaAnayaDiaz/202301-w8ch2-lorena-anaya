@@ -1,0 +1,24 @@
+{
+  "name": "202301-w8ch2-lorena-anaya",
+  "version": "1.0.0",
+  "description": "Dia 1: Vamos a realizar el backend. Para ello tendremos 2 rutas:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LorenaAnayaDiaz/202301-w8ch2-lorena-anaya.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LorenaAnayaDiaz/202301-w8ch2-lorena-anaya/issues"
+  },
+  "homepage": "https://github.com/LorenaAnayaDiaz/202301-w8ch2-lorena-anaya#readme",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "prettier": "^2.8.4"
+  }
+}
