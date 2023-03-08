@@ -1,13 +1,14 @@
-import express from 'express';
-
 import cors from 'cors';
+import express from 'express';
 
 const app = express();
 
-app.get('/', (_req, res) => {
-  res.json('Hello world');
-});
-
 app.use(cors());
+
+app.get('/', (req, res) => {
+  res.json({ hello: 'World' });
+});
+app.use(express.json());
+app.disable('x-powered-by');
 
 export default app;

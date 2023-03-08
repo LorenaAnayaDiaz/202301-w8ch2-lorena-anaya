@@ -1,5 +1,9 @@
+import request from 'supertest';
+import app from './app.js';
+
 describe('Given an app', () => {
-  test('we expect true to be true', () => {
-    expect(true).toBe(true);
+  test('When the server is deployed, the app should respond with a message', async () => {
+    const res = await request(app).get('/');
+    expect(res.body).toEqual('Hello world');
   });
 });
