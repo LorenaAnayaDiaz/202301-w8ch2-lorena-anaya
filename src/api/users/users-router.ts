@@ -1,8 +1,11 @@
 import express from 'express';
-import { getUserByIdController } from './users-controllers.js';
+import {
+  getUserByIdController,
+  updateUserByIdController,
+} from './users-controllers.js';
 
 const router = express.Router();
 
-router.route('/:id').get(getUserByIdController);
+router.route('/:id').get(getUserByIdController).put(updateUserByIdController);
 
 export default router;
